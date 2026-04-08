@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/malar_products/static/css/main.65abcee4.css",
+    "main.js": "/malar_products/static/js/main.883a070a.js",
+    "static/js/453.4b409929.chunk.js": "/malar_products/static/js/453.4b409929.chunk.js",
+    "static/media/intro_card.png": "/malar_products/static/media/intro_card.de06939d43ba8087d8f1.png",
+    "static/media/faq_img.png": "/malar_products/static/media/faq_img.78ead6e3d6d1e9c49be7.png",
+    "static/media/before1.png": "/malar_products/static/media/before1.e1f1d84a05b232fe1455.png",
+    "static/media/after3.png": "/malar_products/static/media/after3.864fa3368f6a4ed86b6f.png",
+    "static/media/before3.png": "/malar_products/static/media/before3.9b94a36058ed407791e9.png",
+    "static/media/after2.png": "/malar_products/static/media/after2.3683312923813bec5fbb.png",
+    "static/media/before2.png": "/malar_products/static/media/before2.3683312923813bec5fbb.png",
+    "static/media/after1.png": "/malar_products/static/media/after1.c8fbdc299569565c8464.png",
+    "static/media/idlypodi.png": "/malar_products/static/media/idlypodi.13b54b0432f1c31542ce.png",
+    "static/media/shikakai.png": "/malar_products/static/media/shikakai.9a0486f86ef37062553e.png",
+    "static/media/arappu.png": "/malar_products/static/media/arappu.5e8e24076ee26aac0ace.png",
+    "static/media/facepack.png": "/malar_products/static/media/facepack.ba9ae7ecbfa6d0adbd3c.png",
+    "static/media/benefit1.png": "/malar_products/static/media/benefit1.df36a5a99b96433727a9.png",
+    "static/media/dandruff.png": "/malar_products/static/media/dandruff.54cd109480faf9ba68ee.png",
+    "static/media/hair-oil.png": "/malar_products/static/media/hair-oil.bbd5f11597aa51f80837.png",
+    "static/media/benefit3.png": "/malar_products/static/media/benefit3.25293e6c012797ee525c.png",
+    "static/media/benefit2.png": "/malar_products/static/media/benefit2.e355327c7a49f919389e.png",
+    "static/media/rosemary.png": "/malar_products/static/media/rosemary.ec4fe66046430514eecf.png",
+    "static/media/Group 80.png": "/malar_products/static/media/Group 80.a506d134fe92c551f84a.png",
+    "static/media/kumkumadhi.png": "/malar_products/static/media/kumkumadhi.faff3a0da5935c5f92b1.png",
+    "static/media/benefit4.png": "/malar_products/static/media/benefit4.5ae02c36a1856ff05448.png",
+    "static/media/logo_white.png": "/malar_products/static/media/logo_white.77c4a2d17d6368311273.png",
+    "static/media/logo.svg": "/malar_products/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/slick.svg": "/malar_products/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/malar_products/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/malar_products/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/malar_products/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/malar_products/index.html",
+    "main.65abcee4.css.map": "/malar_products/static/css/main.65abcee4.css.map",
+    "main.883a070a.js.map": "/malar_products/static/js/main.883a070a.js.map",
+    "453.4b409929.chunk.js.map": "/malar_products/static/js/453.4b409929.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65abcee4.css",
+    "static/js/main.883a070a.js"
+  ]
+}
