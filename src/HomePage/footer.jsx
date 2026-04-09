@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Typography, Divider } from "@mui/material";
+import { Box, Grid, Typography, Divider, useTheme, useMediaQuery } from "@mui/material";
 
 import WhatsAppIcon from "../Assets/Images/WhatsApp.png";
 import InstagramIcon from "../Assets/Images/Instagram.png";
@@ -8,6 +8,8 @@ import YouTubeIcon from "../Assets/Images/YouTube.png";
 import Malar_Logo_White from "../Assets/Images/logo_white.png";
 
 const Footer = () => {
+    const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
     return (
         <Box
             sx={{
@@ -41,14 +43,16 @@ const Footer = () => {
                 </Grid>
 
                 <Grid sx={{
-                    width: "70%"
+                    width: isMobile ? "100%": "70%",
+                    marginTop: isMobile? "16px" : "0px"
                 }}>
 
 
                     <Grid sx={{
                         display: "flex",
                         justifyContent: "space-between",
-                        
+                        flexDirection: isMobile ? "column" : "row",
+                        gap: isMobile ? "12px" : "0px"
                     }}>
 
                         {/* INFORMATION */}
@@ -89,13 +93,13 @@ const Footer = () => {
                     <Grid>
                         <Divider sx={{ my: 4, background: "rgba(255,255,255,0.3)" }} />
                         <Grid container alignItems="center" sx={{
-                            display:"flex", justifyContent:"space-between"
+                            display:"flex", justifyContent: isMobile ? "center" : "space-between" 
                         }}>
                             {/* EMPTY SPACE (LEFT) */}
                             <Grid item md={3} display={{ xs: "none", md: "block" }} />
 
                             {/* FOLLOW US CENTER */}
-                            <Grid item xs={12} md={6} textAlign="center">
+                            <Grid item xs={12} md={6} textAlign="center" >
                                 <Typography fontWeight="bold" mb={2} sx={{ textDecoration: "underline" }}>
                                     Follow Us
                                 </Typography>

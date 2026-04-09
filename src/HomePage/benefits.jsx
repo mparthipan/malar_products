@@ -133,7 +133,7 @@ const BenefitsPage = () => {
       <Typography
         variant="h5"
         align="center"
-        sx={{ fontWeight: 600, mb: 4, marginBottom: "60px", backgroundColor: "rgba(42, 107, 55, 0.1)", padding: "12px" }}
+        sx={{ fontWeight: 600, mb: 4, marginBottom: isMobile ? "0px" : "60px", backgroundColor: "rgba(42, 107, 55, 0.1)", padding: "12px" }}
       >
         Product Benefits
       </Typography>
@@ -218,7 +218,7 @@ const BenefitsPage = () => {
           );
         })}
       </Slider>
-      <Box sx={{ mt: { xs: 4, md: 6 }, p: { xs: 2, md: 4 }, borderRadius: 4, background: "#eef2ef", textAlign: "center", }}>
+      {/* <Box sx={{ mt: { xs: 4, md: 6 }, p: { xs: 2, md: 4 }, borderRadius: 4, background: "#eef2ef", textAlign: "center", }}>
         <Typography variant="h6" mb={3}> Benefits </Typography>
         <Box sx={{ display: "grid", gridTemplateColumns: { xs: "repeat(2, 1fr)", sm: "repeat(3, 1fr)", md: "repeat(4, 1fr)", }, gap: { xs: 2, md: 4 }, }}> {products[activeIndex].benefits.map((benefit, i) => (
           <Box key={i}>
@@ -237,7 +237,96 @@ const BenefitsPage = () => {
           </Box>))} </Box>
         <Typography mt={4} fontWeight={600} sx={{ fontSize: "32px" }}> Ingredients </Typography>
         <Typography variant="body2" mt={1} sx={{ fontSize: "24px" }} > {products[activeIndex].ingredients} </Typography>
+      </Box> */}
+
+      <Box
+  sx={{
+    mt: { xs: 4, md: 6 },
+    p: { xs: 2, md: 4 },
+    borderRadius: 4,
+    background: "#eef2ef",
+    textAlign: "center",
+  }}
+>
+  <Typography variant="h6" mb={3}>
+    Benefits
+  </Typography>
+
+  {/* ✅ GRID FIX */}
+  <Box
+    sx={{
+      display: "grid",
+      gridTemplateColumns: {
+        xs: "repeat(4, minmax(0, 1fr))", // 🔥 prevents overflow
+        sm: "repeat(3, 1fr)",
+        md: "repeat(4, 1fr)",
+      },
+      gap: { xs: 1, md: 4 },
+    }}
+  >
+    {products[activeIndex].benefits.map((benefit, i) => (
+      <Box key={i}>
+        
+        {/* ✅ CIRCLE FIX (RESPONSIVE) */}
+        <Box
+          sx={{
+            width: { xs: "100%", md: 190 },   // 🔥 no fixed width on mobile
+            maxWidth: { xs: 70, md: 190 },    // 🔥 limit size
+            height: { xs: 70, md: 190 },
+            borderRadius: "50%",
+            background: "#dfe6e2",
+            mx: "auto",
+            mb: 1,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Box
+            component="img"
+            src={benefit.image}
+            alt={benefit.label}
+            sx={{
+              width: { xs: 40, md: 133 },
+              height: { xs: 40, md: 127 },
+            }}
+          />
+        </Box>
+
+        {/* TEXT */}
+        <Typography
+          variant="body2"
+          sx={{
+            fontSize: { xs: 10, md: "24px" },
+            fontWeight: 400,
+            color: "#2A6B37",
+            mt: 1,
+            lineHeight: 1.2,
+          }}
+        >
+          {benefit.label}
+        </Typography>
       </Box>
+    ))}
+  </Box>
+
+  {/* INGREDIENTS */}
+  <Typography
+    mt={4}
+    fontWeight={600}
+    sx={{ fontSize: { xs: 18, md: "32px" } }}
+  >
+    Ingredients
+  </Typography>
+
+  <Typography
+    variant="body2"
+    mt={1}
+    sx={{ fontSize: { xs: 14, md: "24px" } }}
+  >
+    {products[activeIndex].ingredients}
+  </Typography>
+</Box>
     </Box>
   );
 };
