@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/malar_products/static/css/main.65abcee4.css",
-    "main.js": "/malar_products/static/js/main.883a070a.js",
+    "main.js": "/malar_products/static/js/main.13161dce.js",
     "static/js/453.4b409929.chunk.js": "/malar_products/static/js/453.4b409929.chunk.js",
     "static/media/intro_card.png": "/malar_products/static/media/intro_card.de06939d43ba8087d8f1.png",
     "static/media/faq_img.png": "/malar_products/static/media/faq_img.78ead6e3d6d1e9c49be7.png",
@@ -32,11 +32,11 @@
     "static/media/slick.woff": "/malar_products/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/malar_products/index.html",
     "main.65abcee4.css.map": "/malar_products/static/css/main.65abcee4.css.map",
-    "main.883a070a.js.map": "/malar_products/static/js/main.883a070a.js.map",
+    "main.13161dce.js.map": "/malar_products/static/js/main.13161dce.js.map",
     "453.4b409929.chunk.js.map": "/malar_products/static/js/453.4b409929.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.65abcee4.css",
-    "static/js/main.883a070a.js"
+    "static/js/main.13161dce.js"
   ]
 }
